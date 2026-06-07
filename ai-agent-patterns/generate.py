@@ -7,7 +7,8 @@ from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.oxml.ns import qn
 from docx.oxml import OxmlElement
 
-OUT_DIR = Path(__file__).parent
+OUT_DIR = Path(__file__).parent / "build"
+OUT_DIR.mkdir(exist_ok=True)
 PLANTUML_JAR = r"C:\tools\plantuml.jar"
 
 # ---------------------------------------------------------------------------
