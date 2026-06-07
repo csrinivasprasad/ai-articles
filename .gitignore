@@ -1,0 +1,13 @@
+# Generated artifacts — recreated by running generate.py
+*.png
+*.puml
+*.docx
+
+# Word temporary lock files
+~$*
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
