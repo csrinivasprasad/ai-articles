@@ -24,6 +24,12 @@ A comprehensive reference from graph fundamentals through production-grade multi
 
 Cost and quality optimisation patterns for LLM applications.
 
+**Covers:** multi-agent pipelines (model per step), prompt/token caching, RAG with vector DBs,
+local model offloading, context window discipline, programmable tool calling, async batching,
+and the full efficient AI stack.
+
+5 PlantUML diagrams. Source: [`efficient_ai_usage.md`](efficient-ai-usage/efficient_ai_usage.md)
+
 ---
 
 ## Usage
