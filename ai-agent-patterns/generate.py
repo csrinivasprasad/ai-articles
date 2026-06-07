@@ -9,6 +9,8 @@ from docx.oxml import OxmlElement
 
 OUT_DIR = Path(__file__).parent / "build"
 OUT_DIR.mkdir(exist_ok=True)
+DOC_DIR = Path(__file__).parent / "output"
+DOC_DIR.mkdir(exist_ok=True)
 PLANTUML_JAR = r"C:\tools\plantuml.jar"
 
 # ---------------------------------------------------------------------------
@@ -1249,7 +1251,7 @@ def build_doc(dp):  # dp = diagram_paths dict
     )
 
     # ── Save ──────────────────────────────────────────────────────────────────
-    out_path = OUT_DIR / "ai_agent_patterns.docx"
+    out_path = DOC_DIR / "ai_agent_patterns.docx"
     doc.save(str(out_path))
     print(f"\nDocument saved: {out_path}")
     return out_path

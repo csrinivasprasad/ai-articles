@@ -1,7 +1,5 @@
-# Generated artifacts — recreated by running generate.py
-*.png
-*.puml
-*.docx
+# Diagram build artifacts — recreated by running generate.py
+build/
 
 # Word temporary lock files
 ~$*

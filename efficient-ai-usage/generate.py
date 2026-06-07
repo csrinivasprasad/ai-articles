@@ -11,6 +11,8 @@ import textwrap
 
 OUT_DIR = Path(__file__).parent / "build"
 OUT_DIR.mkdir(exist_ok=True)
+DOC_DIR = Path(__file__).parent / "output"
+DOC_DIR.mkdir(exist_ok=True)
 PLANTUML_JAR = r"C:\tools\plantuml.jar"
 
 # ---------------------------------------------------------------------------
@@ -550,7 +552,7 @@ def build_doc(diagram_paths):
     )
     closing.runs[0].italic = True
 
-    out_path = OUT_DIR / "efficient_ai_usage.docx"
+    out_path = DOC_DIR / "efficient_ai_usage.docx"
     doc.save(str(out_path))
     print(f"\nDocument saved: {out_path}")
     return out_path
