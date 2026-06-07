@@ -9,7 +9,8 @@ from docx.oxml.ns import qn
 from docx.oxml import OxmlElement
 import textwrap
 
-OUT_DIR = Path(__file__).parent
+OUT_DIR = Path(__file__).parent / "build"
+OUT_DIR.mkdir(exist_ok=True)
 PLANTUML_JAR = r"C:\tools\plantuml.jar"
 
 # ---------------------------------------------------------------------------
@@ -556,6 +557,5 @@ def build_doc(diagram_paths):
 
 
 if __name__ == "__main__":
-    os.makedirs(OUT_DIR, exist_ok=True)
     diagram_paths = render_diagrams()
     build_doc(diagram_paths)
